@@ -19,15 +19,15 @@ class TV:
         if isinstance(marca, Marca):
             self.marca = marca
 
-    def getControl(self):
-        return self.control
-    def setControl(self, control):
-        self.control = control
-
     def getPrecio(self):
         return self.precio
     def setPrecio(self, precio):
         self.precio = precio
+
+    def getControl(self):
+        return self.control
+    def setControl(self, control):
+        self.control = control
 
     def getVolumen(self):
         return self.volumen

@@ -15,7 +15,6 @@ class Control:
             self.setTv(tv)
             self.tv.setControl(self)
 
-    
     def turnOn(self):
         if isinstance(self.tv, TV):
             self.tv.turnOn()
@@ -27,14 +26,14 @@ class Control:
     def canalUp(self):
         if isinstance(self.tv, TV):
             self.tv.canalUp()
-    
-    def canalDown(self):
-        if isinstance(self.tv, TV):
-            self.tv.canalDown()
 
     def volumenUp(self):
         if isinstance(self.tv, TV):
             self.tv.volumenUp()
+
+    def canalDown(self):
+        if isinstance(self.tv, TV):
+            self.tv.canalDown()
 
     def volumenDown(self):
         if isinstance(self.tv, TV):
